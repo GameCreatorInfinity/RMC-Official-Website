@@ -36,7 +36,7 @@ body {
 .three-dot {
     position: fixed;
     top: 20px;
-    right: 15px;          /* 👈 एकदम right side */
+    right: 15px;          
     font-size: 26px;
     color: #d4af37;
     cursor: pointer;
