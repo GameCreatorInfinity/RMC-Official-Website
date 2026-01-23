@@ -181,33 +181,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif
     border: none;
     
 }
-.other-events{
-     width: 100%;
-    margin: 150px 0;
-    padding: 60px 0;
 
-    background: rgba(255,255,255,0.12);
-    backdrop-filter: blur(14px);
-
-    border-top: 1px solid rgba(255,255,255,0.25);
-    border-bottom: 1px solid rgba(255,255,255,0.25);
-
-    box-shadow: 0 25px 60px rgba(0,0,0,0.45);
-}
-.other-events-title-box{
-    max-width: 700px;
-    margin: 120px auto 30px;
-    padding: 14px 30px;
-
-    background: rgba(255,255,255,0.10);
-    backdrop-filter: blur(10px);
-
-    border-radius: 30px;
-    border: 1px solid rgba(255,255,255,0.25);
-
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-}
 
 .title-box h2{
       max-width: 700px;
@@ -332,5 +306,6 @@ border: 1px solid rgba(255, 255, 255, 0.25);
     initial-value: 0deg;
     inherits: false;
 }
+
 
 
