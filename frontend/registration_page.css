@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    
+    color: azure;
+    
+    
+    text-align: center;
+letter-spacing: 5px;
+font-size: 15px;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+
+    
+height: 100%;
+}
+body{
+    
+    
+    margin: 0;
+    background:
+        radial-gradient(circle at top left, #1e96fc, transparent 40%),
+        radial-gradient(circle at bottom right, #9d4edd, transparent 40%),
+        linear-gradient(135deg, #020024, #000328);
+
+
+}
+
+
+.container{
+
+    width: 100%;
+    
+}
+.event{
+    display: flex;
+    flex-wrap: wrap;
+
+justify-content: center;
+align-items: center;
+gap: 20px;
+    
+}
+.title{
+   
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    font-size: clamp(2rem, 6vw, 2rem);
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    background: linear-gradient(
+        90deg,
+        #00f5ff,
+        #38bdf8,
+        #a855f7,
+        #ffb703
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+ -webkit-text-stroke: 1.5px white;
+
+    text-shadow:
+        0 0 10px rgba(0,245,255,0.6),
+        0 0 25px rgba(168,85,247,0.5),
+        0 0 45px rgba(255,183,3,0.35);
+
+    animation: cyberGlow 6s linear infinite;
+ } .title span{
+    color: #ffb703;
+    text-shadow:
+        0 0 15px rgba(255,183,3,0.9),
+        0 0 35px rgba(255,183,3,0.6);
+}
+
+
+
+
+
+    
+
+
+
+.content{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    gap: 30px;
+    width: fit-content;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.logo{
+    
+
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,0.6));
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+
+.details p{
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.85);
+    
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        position: static;
+        transform: none;
+        margin: 0 auto 20px;
+    }
+
+}
+
+
+.logo:hover {
+      transform: scale(1.05);
+box-shadow: 0 20px 40px #4CC9F0B3;
+}
+.logo img{
+max-width: 100%;
+max-height: 100%;
+flex-shrink: 0;
+object-fit: cover;
+
+}
+
+.registration{ height:400px;
+     width:350px;
+      backdrop-filter: blur(12px);
+     border-radius: 10px;
+       box-shadow: 0 10px 30px rgba(0,0,0,1.5);
+        
+        background:#ffffff14;
+        
+         
+          position: relative;
+           padding: 10px;
+            margin: 0 auto; }
+
+.registration h3{
+text-align: center;
+color: aliceblue;  
+letter-spacing: 3px;  
+font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.registration label{
+    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+    border: none;
+    
+    color: aliceblue;
+}
+.registration input,
+.registration select {
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    margin-top: 2px;
+     background-color: #468faf;
+    border: none;
+    
+}
+.other-events{
+     width: 100%;
+    margin: 150px 0;
+    padding: 60px 0;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(14px);
+
+    border-top: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+}
+.other-events-title-box{
+    max-width: 700px;
+    margin: 120px auto 30px;
+    padding: 14px 30px;
+
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(10px);
+
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.25);
+
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.title-box h2{
+      max-width: 700px;
+    margin: 120px auto 30px;
+    padding: 14px 30px;
+
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(10px);
+
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.25);
+
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.btn {
+width: 100%;
+    border: none;
+    padding: 8px 0;
+    margin-top:30px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    
+     background: linear-gradient(135deg, #4cc9f0, #4895ef);
+    position: relative;
+    
+    
+     
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 45px rgba(48,197,210,0.7);
+}
+.ev-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+.cards{
+    margin:80px auto;
+    width:800px ;
+    
+    height: 300px;
+    border-radius: 10px;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
+     mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
+
+    
+    overflow-x: auto;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cards::-webkit-scrollbar{
+    display: none;
+}
+.group{
+    display: flex;
+    
+    justify-content: center;
+    gap:50px;
+    animation: scroll 10s linear infinite;
+    width: max-content;
+    align-items: stretch;
+    
+}
+.cards:hover .group{
+
+    animation-play-state: paused;
+}
+@keyframes scroll{
+    0%{transform: translateX(0);}
+    100%{transform:translateX(-50%);}
+}
+.card{
+display: flex;
+flex:0 0 auto;
+margin-top: 20px;
+color: #000328;
+box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+     width: 280px;
+    height: 280px;
+    padding: 5px;
+    font-size: 3rem;
+    background: rgba(255, 255, 255, 0.18);
+border: 1px solid rgba(255, 255, 255, 0.25);
+
+
+    text-align: center;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+
+.other-events h2{
+    text-align: center;
+    margin-top: 200px;
+    color:white;
+
+}
+
+@property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
