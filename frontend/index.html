@@ -3,53 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>RMC</title>
+    <title>RMC | CLUB RSCOE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-    <section class="video-container">
-
-        <video autoplay muted loop>
-            <source src="/img/rmc.mov" type="video/mp4">
+    
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="img/rmc.mov" type="video/mp4">
         </video>
-
-        <!-- OVERLAY CONTENT -->
-        <div class="video-overlay">
-            <img src="/img/logo.png" class="logo" alt="Logo">
-            <a href="#" class="btn">Join Now</a>
-        </div>
-
-        !-- COLLEGE NAME -->
-        <div class="college-name">
-            JSPM’s Rajarshi Shahu College of Engineering, Tathawade, Pune
-        </div>
-
-        <!-- LOGO -->
-        <img src="/img/jspm..png" alt="College Logo" class="college-logo-left">
-        <img src="/img/rsmc.png" alt="College Logo" class="college-logo-right">
-
-
-        <div class="three-dot" onclick="toggleDotMenu()">⋮</div>
-
         
-         <div class="dot-menu" id="dotMenu">
-  <a href="./index.html">Home</a>
-  <a href="./about.html">About</a>
-  <a href="./members.html">Members</a>
-  <a href="./past_events.html">Past Events</a>
-  <a href="./event_registration.html">Event Registration</a>
-  <a href="./achievements.html">Achievements</a>
-</div>
-</section>
-        <!--js -->
+        <div class="video-overlay">
+            <img src="img/logo.png" class="logo">
+        </div>
+    </div>
+   <header class="main-header">
+
+    <div class="left-brand">
+        <img src="/img/logo.png" class="header-logo">
+        <span class="short-name">RMC</span>
+ </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    </header>
+
+    <nav class="side-menu" id="sideMenu">
+    <a href="INDEX.html">HOME</a>
+    <a href="#about-section">ABOUT</a>
+    <a href="#events">EVENTS</a>
+    <a href="#events">ACTIVITIS</a>
+    <a href="members.html" target="_blank">CLUB MEMBERS</a>
+    <a href="https://forms.gle/XXXXXXXX" target="_blank">REGISTER FOR EVENT</a>
+   
+    </nav>
+
+    <div class="scroll-up" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+    <span></span>
+    </div>
+    
+
+    <div class="content">
+        
+        <section class="about-section">
+            <h2>ABOUT US</h2>
+         <p>
+        The Mathematics Club was founded by two students whose curiosity 
+        led them to an interstate competition, where they represented Pune
+        as the only engineering participants. Their experience and the 
+        appreciation received from the panel inspired the question, “Why not others?”
+        Collaboration with faculty members during early event planning naturally
+        evolved into the formal establishment of the club. Today, the
+        club is dedicated exclusively to pure mathematics and guided by
+        the motto “Apply and Innovate.”
+        </p></section>
+
+        <section class="activity-section">
+            <h2>ACTIVITIS</h2>
+            <h4>AI WORKSHOPE</h4>
+            <p>RMC (Rajarshi Shahu Maths Club) hosts guest lectures and many student led lectures on machine 
+            learning and application of pure mathematics. They provied a detailed and begineer friendly
+             introduction to ML and how it's used. It provided students with a meaningful opportunity 
+             to connect mathematical theory with modern, applied problem-solving.</p>
+        <div class="activities-grid">
+        <div class="activity-card">
+            <img src="img/" alt="Member">
+        </div>
+
+        <div class="activity-card">
+            <video autoplay muted loop playsinline>
+                <source src="img/aiwa.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="activity-card">
+            <img src="img/activity3.jpg" alt="Member">
+        </div>
+    </div>
+            <h4>QUIZ & PUZZLE DAY</h4>
+            <p></p>
+        <div class="activities-grid">
+        <div class="activity-card">
+            <img src="img/" alt="Member">
+        </div>
+
+        <div class="activity-card">
+            <video autoplay muted loop playsinline>
+                <source src="img/aiwa.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="activity-card">
+            <img src="img/activity3.jpg" alt="Member">
+        </div>
+    </div>
+     </section>
+
+        <section class="events-section">
+            <h2>EVENT</h2>
+            <p>THE UP COMING EVENTS ARE:</p>
+            <div class="event-box">
+        <button class="nav-btn left" onclick="prevEvent()">&#10094;</button>
+
+        <div class="event-content">
+            <div class="event-media">
+                <img id="eventImage" src="event1.jpg" alt="Event">
+            </div>
+
+            <div class="event-text">
+                <h3 id="eventTitle">Tech Workshop</h3>
+                <p id="eventDesc">
+                    Hands-on workshop on latest technologies conducted by RMC club.
+                </p>
+            </div>
+        </div>
+
+        <button class="nav-btn right" onclick="nextEvent()">&#10095;</button>
+    </div>
+    </section>
+
+
+        <section class="members-section">
+            <h2>CLUB MEMBERS</h2>
+            <div class="btn-container">
+            <a href="members.html" target="_blank" class="btn">
+                DETAILS
+            </a>
+            </div>
+
+        </section>
+
+        <section class="register-section">
+    
+            <h2>ENTER IN RMC EVENT</h2>
+            <div class="btn-container">
+                <a href="https://forms.gle/XXXXXXXX" target="_blank" class="btn">
+                     REGISTER NOW
+                </a>
+            </div>
+
+        </section>
+
+        </div>
 <script>
-function toggleDotMenu() {
-    document.getElementById("dotMenu").classList.toggle("active");
+let events = [
+    {
+        img: "event1.jpg",
+        title: "Tech Workshop",
+        desc: "Hands-on workshop on latest technologies conducted by RMC club."
+    },
+    {
+        img: "event2.jpg",
+        title: "Cultural Fest",
+        desc: "A vibrant cultural event with performances and competitions."
+    },
+    {
+        img: "event3.jpg",
+        title: "Hackathon",
+        desc: "24-hour coding challenge organized by RMC members."
+    }
+];
+
+let index = 0;
+
+function updateEvent() {
+    document.getElementById("eventImage").src = events[index].img;
+    document.getElementById("eventTitle").innerText = events[index].title;
+    document.getElementById("eventDesc").innerText = events[index].desc;
+}
+
+function nextEvent() {
+    index = (index + 1) % events.length;
+    updateEvent();
+}
+
+function prevEvent() {
+    index = (index - 1 + events.length) % events.length;
+    updateEvent();
 }
 </script>
 
-</main>
-    </main>
+<script>
+function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+}
+const sections = document.querySelectorAll('.about-section, .events-section');
+
+window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        const vh = window.innerHeight;
+        let visible = 1 - Math.abs(rect.top - vh / 2) / vh;
+        visible = Math.min(Math.max(visible, 0), 1);
+        const blur = 6 + visible * 6;
+        sec.style.setProperty('--blur', blur + 'px');
+    });
+});
+</script>       
+
 </body>
 </html>
