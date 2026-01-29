@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="rmcbackground.mp4" type="video/mp4">
+        </video>
+        
+        <div class="video-overlay">
+            <img src="img/logo.png" class="logo">
+        </div>
+    </div>
+   <header class="main-header">
+
+    <div class="left-brand">
+        <img src="/img/logo.png" class="header-logo">
+        <span class="short-name">RMC</span>
+ </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    </header>
+
+    <nav class="side-menu" id="sideMenu">
+    <a href="index.html">HOME</a>
+    <a href="members.html" target="_blank">CLUB MEMBERS</a>
+    <a href="ragister.html" target="_blank">REGISTER FOR EVENT</a>
+    </nav>
+
+    <div class="scroll-up" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+    <span></span>
+    </div>
+    
+
+    <div class="content">
+        
+        <section class="about-section">
+            <h2>ABOUT US</h2>
+         <p>
+        The Mathematics Club was founded by two students whose curiosity 
+        led them to an interstate competition, where they represented Pune
+        as the only engineering participants. Their experience and the 
+        appreciation received from the panel inspired the question, “Why not others?”
+        Collaboration with faculty members during early event planning naturally
+        evolved into the formal establishment of the club. Today, the
+        club is dedicated exclusively to pure mathematics and guided by
+        the motto “Apply and Innovate.”
+        </p></section>
+
+        <section class="activity-section">
+            <h2>ACTIVITIS</h2>
+            <h4>AI WORKSHOP</h4>
+            <p>RMC (Rajarshi Shahu Maths Club) hosts guest lectures and many student led lectures on machine 
+            learning and application of pure mathematics. They provied a detailed and begineer friendly
+             introduction to ML and how it's used. It provided students with a meaningful opportunity 
+             to connect mathematical theory with modern, applied problem-solving.</p>
+        <div class="activities-grid">
+        <div class="activity-card1">
+            <img src="img/aiml1.jpeg" alt="Member">
+        </div>
+
+        <div class="activity-card1">
+            <img src="img/aiml2.jpeg" alt="Member">
+        </div>
+        
+        <div class="activity-card">
+            <video autoplay muted loop playsinline>
+                <source src="img/aiml.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+            <h4>QUIZ & PUZZLE DAY</h4>
+            <p>Maths Quiz & Puzzles Day is a weekly activity organized by the RMC Club to make learning mathematics more engaging and enjoyable. It helps students improve their logical thinking, analytical ability, and problem-solving skills. Through quizzes, students can test their mathematical knowledge in a fun and competitive way. Puzzles encourage creativity, speed, and accuracy while boosting confidence. This activity also promotes teamwork and healthy competition among participants. Overall, Maths Quiz & Puzzles Day makes mathematics interesting and helps students develop strong thinking skills.
+</p>
+        <div class="activities-grid">
+        <div class="activity-card1">
+            <img src="img/p1.jpeg" alt="Member">
+        </div>
+
+        <div class="activity-card1">
+            <img src="img/p3.jpeg" alt="Member">
+        </div>
+
+        <div class="activity-card">
+            <img src="img/p2.jpeg" alt="Member">
+        </div>
+    </div>
+     </section>
+
+        <section class="events-section">
+            <h2>EVENT</h2>
+            <p></p>
+            <div class="event-box">
+     <button class="nav-btn left" >&#10094;</button>
+
+        <div class="event-content">
+            <div class="event-media">
+                <img id="eventImage" src="/img/member1.jpg" alt="Event">
+            </div>
+
+            <div class="event-text">
+                <h3 id="eventTitle">Tech Workshop</h3>
+                <p id="eventDesc">
+                    Hands-on workshop on latest technologies conducted by RMC club.
+                </p>
+            </div>
+        </div>
+
+      <button class="nav-btn right" >&#10095;
+    </div>
+    </section>
+
+
+        <section class="members-section">
+          
+            <h2>CLUB MEMBERS</h2>
+            <div class="btn-container">
+            <a href="members.html" target="_blank" class="btn">
+                DETAILS
+            </a>
+            </div>
+
+        </section>
+
+        <section class="register-section">
+    
+            <h2>ENTER IN RMC EVENT</h2>
+            <div class="btn-container">
+                <a href="ragister.html" target="_blank" class="btn">
+                     REGISTER NOW
+                </a>
+            </div>
+
+        </section>
+
+        </div>
+
+
+<script src="scroll.js"></script>
+</body>
+</html>
