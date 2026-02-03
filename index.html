@@ -33,10 +33,13 @@
     </header>
 
     <nav class="side-menu" id="sideMenu">
-    <a href="index.html">HOME</a>
-    <a href="members.html" target="_blank">CLUB MEMBERS</a>
-    <a href="ragister.html" target="_blank">REGISTER FOR EVENT</a>
-    </nav>
+    <a href="#home" onclick="toggleMenu()">HOME</a>
+    <a href="#about" onclick="toggleMenu()">ABOUT</a>
+    <a href="#activities" onclick="toggleMenu()">ACTIVITIES</a>
+    <a href="#events" onclick="toggleMenu()">EVENTS</a>
+    <a href="#members" onclick="toggleMenu()">MEMBERS</a>
+    <a href="#register" onclick="toggleMenu()">REGISTER</a>
+</nav>
 
     <div class="scroll-up" onclick="window.scrollTo({top:0, behavior:'smooth'})">
     <span></span>
@@ -45,7 +48,7 @@
 
     <div class="content">
         
-        <section class="about-section">
+        <section class="about-section" id="about">
             <h2>ABOUT US</h2>
          <p>
         The Mathematics Club was founded by two students whose curiosity 
@@ -58,7 +61,7 @@
         the motto “Apply and Innovate.”
         </p></section>
 
-        <section class="activity-section">
+        <section class="activity-section" id="activities">
             <h2>ACTIVITIS</h2>
             <h4>AI WORKSHOP</h4>
             <p>RMC (Rajarshi Shahu Maths Club) hosts guest lectures and many student led lectures on machine 
@@ -107,13 +110,13 @@
 
         <div class="event-content">
             <div class="event-media">
-                <img id="eventImage" src="/img/member1.jpg" alt="Event">
+                <img id="eventImage" src="/img/2026.jpeg" alt="Event">
             </div>
 
             <div class="event-text">
-                <h3 id="eventTitle">Tech Workshop</h3>
+                <h3 id="eventTitle">Digital Treasure Hunt</h3>
                 <p id="eventDesc">
-                    Hands-on workshop on latest technologies conducted by RMC club.
+                We contributed as event coordinators to Cyber Heist, a technical event organized by the Department of Engineering Sciences and Humanities, supporting the planning and execution of all three rounds. Our responsibilities included framing and curating MCQ questions for Round 1, designing and validating debugging challenges for Round 2, and coordinating the Real Hunt (treasure hunt) in Round 3 by assisting with logistics and execution
                 </p>
             </div>
         </div>
@@ -123,7 +126,7 @@
     </section>
 
 
-        <section class="members-section">
+        <section class="members-section" id="members">
             <h2>CLUB MEMBERS</h2>
             <div class="btn-container">
             <a href="members.html" target="_blank" class="btn">
@@ -133,7 +136,7 @@
 
         </section>
 
-        <section class="register-section">
+        <section class="register-section" id="register">
     
             <h2>ENTER IN RMC EVENT</h2>
             <div class="btn-container">
@@ -144,23 +147,25 @@
 
         </section>
 
-        </div>
+    </div>
+
+
 <script>
 let events = [
     {
-        img: "/img/member1.jpg",
-        title: "Tech Workshop",
-        desc: "Hands-on workshop on latest technologies conducted by RMC club."
+        img: "/img/2026.jpeg",
+        title: "Treasure Hunt",
+        desc: "We contributed as event coordinators to Cyber Heist, a technical event organized by the Department of Engineering Sciences and Humanities, supporting the planning and execution of all three rounds. Our responsibilities included framing and curating MCQ questions for Round 1, designing and validating debugging challenges for Round 2, and coordinating the Real Hunt (treasure hunt) in Round 3 by assisting with logistics and execution"
     },
     {
         img: "/img/member1.jpg",
-        title: "Cultural Fest",
-        desc: "A vibrant cultural event with performances and competitions."
+        title: "XYZ Fest",
+        desc: "XYZXYZXYZXYZ"
     },
     {
-        img: "/img/member1.jpg",
-        title: "Hackathon",
-        desc: "24-hour coding challenge organized by RMC members."
+        img: "/img/2026.jpeg",
+        title: "XYZ",
+        desc: "XYZXYZXYZXYZ"
     }
 ];
 
