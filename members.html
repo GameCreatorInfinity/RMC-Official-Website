@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMC | CLUB MEMBERS</title>
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <link rel="apple-touch-icon" href="/img/logo.png">
     <link rel="stylesheet" href="css/members.css">
 </head>
 <body>
     <div class="video-bg">
         <video autoplay muted loop playsinline>
-            <source src="img/rmcbackground.mp4" type="video/mp4">
+            <source src="img/rmc.mov" type="video/mp4">
         </video>
     </div>
 
@@ -19,6 +21,45 @@
     </header>
 
 <section class="members">
+
+    <div class="member-card">
+        <img src="/img/member1.jpg" alt="Member">
+        <h3>DR. NITIN. S. MUJUMDAR</h3>
+        <p>FACULTY COORDIRATOR</p>
+        <P>BSc., M. Sc., M.Phil., Ph. D-(Mathematics)</P>
+    </div>
+
+    <div class="member-card">
+        <img src="/img/darshana.jpeg" alt="Member">
+        <h3>Ms. DARSHANA R. SONJE</h3>
+        <p>FACULTY COORDIRATOR</p>
+        <P>BSc, M. Sc.(Mathematics ), NET, SET</P>
+
+    </div>
+
+    <div class="member-card">
+        <img src="/img/balaji.jpeg" alt="Member">
+        <h3>BALAJI MUKKAWAR</h3>
+        <p>FOUNDER</p>
+    </div>
+
+    <div class="member-card">
+        <img src="/img/pratik.jpeg" alt="Member">
+        <h3>PRATIK PATIL</h3>
+        <p>CO-FOUNDER</p>
+    </div>
+
+    <div class="member-card">
+        <img src="/img/member1.jpg" alt="Member">
+        <h3>ABHISHEK TIRPUDE</h3>
+        <p>CO-FOUNDER</p>
+    </div>
+
+    <div class="member-card">
+        <img src="/img/member1.jpg" alt="Member">
+        <h3>DISHA SATTESA</h3>
+        <p>FOUNDATION COMMITTEE MEMBER</p>
+    </div>
 
     <div class="member-card">
         <img src="img/arush.jpeg" alt="Member">
@@ -45,7 +86,7 @@
     </div>
 
     <div class="member-card">
-        <img src="/img/rohini1.jpeg" alt="Member">
+        <img src="/img/rohini.jpeg" alt="Member">
         <h3>ROHINI GAWALI</h3>
         <p>TECHNICAL TEAM</p>
     </div>
@@ -111,8 +152,24 @@
     </div>
 
 </section>
+<script>
+const cards = document.querySelectorAll('.member-card');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, {
+    threshold: 0.4
+});
+
+cards.forEach(card => observer.observe(card));
+</script>
+
 <footer>
-    <a href="index.html" class="back-btn">← Back to Home</a>
+    <a href="/INDEX.html" class="back-btn">← Back to Home</a>
 </footer>
 
 </body>
