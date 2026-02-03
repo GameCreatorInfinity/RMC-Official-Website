@@ -327,9 +327,9 @@ filter: drop-shadow(0 5px 15px rgba(0,0,0,0.8));
 .members-section,
 .register-section,
 .activity-section {
-    max-width: 900px;
-    margin: 120px auto;
-    padding: 60px 30px;
+    max-width: 850px;
+    margin: 90px auto;
+    padding: 45px 20px;
     background: rgba(0,0,0,0.45);
     backdrop-filter: blur(var(--blur, 6px));
     border-left: px solid #d4af37;
@@ -359,6 +359,34 @@ filter: drop-shadow(0 5px 15px rgba(0,0,0,0.8));
     }
 }
 
+.main-header {
+    animation: headerDown 1.2s ease forwards;
+    transform: translateY(-100%);
+}
+
+@keyframes headerDown {
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.logo {
+    opacity: 0;
+    animation: logoFadeZoom 2.2s ease forwards;
+}
+
+@keyframes logoFadeZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 section {
 
     padding: 90px 20px;
@@ -375,6 +403,7 @@ section h2 {
 }
 
 section h4 {
+    text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
     letter-spacing: 1px;
