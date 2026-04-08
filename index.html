@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/img/logo.png">
     <link rel="apple-touch-icon" href="/img/logo.png">
-    <title>RMC</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>JSPM's | RMC</title>
+    <link rel="stylesheet" href="css/style11.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -14,199 +16,359 @@
         <video autoplay muted loop playsinline>
             <source src="img/rmcbackground.mp4" type="video/mp4">
         </video>
-        
         <div class="video-overlay">
-            <img src="/img/logo.png" class="logo">
+            <img src="img/logo.png" class="logo">
         </div>
     </div>
-   <header class="main-header">
-
-    <div class="left-brand">
-        <img src="/img/logo.png" class="header-logo">
-        <span class="short-name">RMC</span>
- </div>
-
-    <div class="menu-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
+    
+    <header class="main-header">
+        <div class="college-name">
+            JSPM's Rajarshi Shahu College of Engineering, Tathawade, Pune
+        </div>
+        <img src="/img/jspm..png" alt="College Logo" class="college-logo-left">
+        <img src="/img/rsmc.png" alt="College Logo" class="college-logo-right">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <nav class="side-menu" id="sideMenu">
-    <a href="index.html" onclick="toggleMenu()">HOME</a>
-    <a href="#about" onclick="toggleMenu()">ABOUT</a>
-    <a href="#activities" onclick="toggleMenu()">ACTIVITIES</a>
-    <a href="#events" onclick="toggleMenu()">EVENTS</a>
-    <a href="#members" onclick="toggleMenu()">MEMBERS</a>
-    <a href="#register" onclick="toggleMenu()">REGISTER</a>
-</nav>
+        <a href="#home" onclick="toggleMenu()">HOME</a>
+        <a href="#about" onclick="toggleMenu()">ABOUT</a>
+        <a href="#history" onclick="toggleMenu()">HISTORY OF MATHEMATICS</a>
+        <a href="#activities" onclick="toggleMenu()">ACTIVITIES</a>
+        <a href="#events" onclick="toggleMenu()">EVENTS</a>
+        <a href="#members" onclick="toggleMenu()">MEMBERS</a>
+        <a href="#register" onclick="toggleMenu()">REGISTER</a>
+        <a href="#contact-us" onclick="toggleMenu()">CONTACT US</a>
+    </nav>
 
     <div class="scroll-up" onclick="window.scrollTo({top:0, behavior:'smooth'})">
-    <span></span>
+        <span></span>
     </div>
-    
 
     <div class="content">
-        
+
         <section class="about-section" id="about">
             <h2>ABOUT US</h2>
-         <p>
-        The Mathematics Club was founded by two students whose curiosity 
-        led them to an interstate competition, where they represented Pune
-        as the only engineering participants. Their experience and the 
-        appreciation received from the panel inspired the question, “Why not others?”
-        Collaboration with faculty members during early event planning naturally
-        evolved into the formal establishment of the club. Today, the
-        club is dedicated exclusively to pure mathematics and guided by
-        the motto “Apply and Innovate.”
-        </p></section>
+            <p>
+                The Mathematics Club was founded by two students whose curiosity 
+                led them to an interstate competition, where they represented Pune
+                as the only engineering participants. Their experience and the 
+                appreciation received from the panel inspired the question, "Why not others?"
+                Collaboration with faculty members during early event planning naturally
+                evolved into the formal establishment of the club. Today, the
+                club is dedicated exclusively to pure mathematics and guided by
+                the motto "Apply and Innovate."
+            </p>
+        </section>
+
+        <section class="history-section" id="history">
+            <h2>HISTORY OF MATHEMATICS</h2>
+            <h4>Aryabhata (476–550 CE)</h4>
+            <p>Aryabhata was one of the earliest Indian mathematicians and astronomers. Wrote the famous book Aryabhatiya. Calculated value of π (pi) accurately. Explained Earth rotates on its axis. Developed methods for solving quadratic equations</p>
+            <h4>Brahmagupta (598–668 CE)</h4>
+            <p>Brahmagupta made major contributions to algebra. Wrote Brahmasphutasiddhanta. First to give rules for zero and negative numbers. Worked on quadratic equations</p>
+            <h4>Bhaskara II (1114–1185)</h4>
+            <p>Bhaskara II, also known as Bhaskaracharya, was a great mathematician and astronomer. He wrote the famous mathematics book Lilavati and made important contributions to algebra, arithmetic, and early concepts of calculus. He also explained ideas related to gravity long before Isaac Newton.</p>
+            <h4>Madhava of Sangamagrama (1340–1425)</h4>
+            <p>Madhava of Sangamagrama founded the Kerala School of Mathematics. He developed infinite series for sine, cosine, and π, and his work later influenced the development of calculus.</p>
+            <h4>Srinivasa Ramanujan (1887–1920)</h4>
+            <p>Srinivasa Ramanujan was a self-taught mathematical genius from Tamil Nadu. He made remarkable contributions to number theory, infinite series, and continued fractions, and collaborated with G. H. Hardy at University of Cambridge. He is known for concepts like the Ramanujan Prime and the Ramanujan Theta Function, and in India, National Mathematics Day is celebrated on his birthday (22 December).</p>
+            <h4>C. R. Rao (1920–2023)</h4>
+            <p>C. R. Rao was a world-famous statistician known for the Cramér–Rao Bound. He made major contributions to statistical theory and was awarded India's Padma Vibhushan.</p>
+            <h4>Harish-Chandra (1923–1983)</h4>
+            <p>Harish-Chandra worked in representation theory and algebra. He made important contributions to harmonic analysis, and the Harish-Chandra Research Institute is named after him.</p>
+            <h4>Shakuntala Devi (1929–2013)</h4>
+            <p>Shakuntala Devi was known as the "Human Computer." She could solve complex calculations mentally, entered the Guinness World Records, and actively promoted mathematics education.</p>
+            <h4>Manjul Bhargava (1974–Present)</h4>
+            <p>Manjul Bhargava is a modern Indian-origin mathematician. He is a professor at Princeton University, won the Fields Medal in 2014, and works in number theory.</p>
+        </section>
 
         <section class="activity-section" id="activities">
-            <h2>ACTIVITIS</h2>
+            <h2>ACTIVITIES</h2>
             <h4>AI WORKSHOP</h4>
-            <p>RMC (Rajarshi Shahu Maths Club) hosts guest lectures and many student led lectures on machine 
-            learning and application of pure mathematics. They provied a detailed and begineer friendly
-             introduction to ML and how it's used. It provided students with a meaningful opportunity 
-             to connect mathematical theory with modern, applied problem-solving.</p>
-        <div class="activities-grid">
-        <div class="activity-card1">
-            <img src="img/aiml1.jpeg" alt="Member">
-        </div>
-
-        <div class="activity-card1">
-            <img src="img/aiml2.jpeg" alt="Member">
-        </div>
-        
-        <div class="activity-card">
-            <video autoplay muted loop playsinline>
-                <source src="img/aiml.mp4" type="video/mp4">
-            </video>
-        </div>
-
-    </div>
+            <p>RMC (RSCOE Maths Club) hosts guest lectures and many student led lectures on machine learning and application of pure mathematics. Mentors provided a detailed and beginner friendly introduction to ML and how it's used. It provided students with a meaningful opportunity to connect mathematical theory with modern, applied problem-solving.</p>
+            <div class="activities-grid">
+                <div class="activity-card1"><img src="img/aiml1.jpeg" alt="AI Workshop"></div>
+                <div class="activity-card1"><img src="img/aiml2.jpeg" alt="AI Workshop"></div>
+                <div class="activity-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/aiml.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
             <h4>QUIZ & PUZZLE DAY</h4>
-            <p>Maths Quiz & Puzzles Day is a weekly activity organized by the RMC Club to make learning mathematics more engaging and enjoyable. It helps students improve their logical thinking, analytical ability, and problem-solving skills. Through quizzes, students can test their mathematical knowledge in a fun and competitive way. Puzzles encourage creativity, speed, and accuracy while boosting confidence. This activity also promotes teamwork and healthy competition among participants. Overall, Maths Quiz & Puzzles Day makes mathematics interesting and helps students develop strong thinking skills.
-</p>
-        <div class="activities-grid">
-        <div class="activity-card1">
-            <img src="img/p1.jpeg" alt="Member">
-        </div>
+            <p>Maths Quiz & Puzzles Day is a weekly activity organized by the Maths Club to make learning mathematics more engaging and enjoyable. It helps students improve their logical thinking, analytical ability, and problem-solving skills.</p>
+            <h5>FOR EXAMPLES:</h5>
+            <div class="activities-grid">
+                <div class="activity-card1"><img src="img/p1.jpeg" alt="Puzzle"></div>
+                <div class="activity-card1"><img src="img/p3.jpeg" alt="Puzzle"></div>
+                <div class="activity-card"><img src="img/p2.jpeg" alt="Puzzle"></div>
+            </div>
+            <h4>RESEARCH AND LEARNING</h4>
+            <div class="activities-grid">
+                <div class="activity-card1"><img src="img/A2.jpeg" alt="Research"></div>
+                <div class="activity-card1"><img src="img/A3.png" alt="Research"></div>
+                <div class="activity-card"><img src="img/A1.jpeg" alt="Research"></div>
+            </div>
+        </section>
 
-        <div class="activity-card1">
-            <img src="img/p3.jpeg" alt="Member">
-        </div>
-
-        <div class="activity-card">
-            <img src="img/p2.jpeg" alt="Member">
-        </div>
-    </div>
-     </section>
-
-        <section class="events-section">
-            <h2>EVENT</h2>
-            <p></p>
-            <div class="event-box">
-        <button class="nav-btn left" onclick="prevEvent()">&#10094;</button>
-
-        <div class="event-content">
-            <div class="event-media">
-                <img id="eventImage" src="/img/2026.jpeg" alt="Event">
+        <!-- ========== REDESIGNED EVENTS SECTION ========== -->
+        <section class="events-section" id="events">
+            <div class="events-header">
+                <div class="events-label">OUR EVENTS</div>
+                <h2>MOMENTS THAT MATTER</h2>
+                <p class="events-subtitle">Explore the milestones and activities that define the RMC journey</p>
             </div>
 
-            <div class="event-text">
-                <h3 id="eventTitle">Digital Treasure Hunt</h3>
-                <p id="eventDesc">
-                We contributed as event coordinators to Cyber Heist, a technical event organized by the Department of Engineering Sciences and Humanities, supporting the planning and execution of all three rounds. Our responsibilities included framing and curating MCQ questions for Round 1, designing and validating debugging challenges for Round 2, and coordinating the Real Hunt (treasure hunt) in Round 3 by assisting with logistics and execution
-                </p>
+            <div class="events-ticker-bar">
+                <span class="ticker-dot"></span>
+                <span class="ticker-text" id="tickerText">NEXT EVENT COMING SOON — STAY TUNED</span>
             </div>
-        </div>
 
-        <button class="nav-btn right" onclick="nextEvent()">&#10095;</button>
-    </div>
-    </section>
+            <div class="events-arena">
+                <!-- Featured card (large) -->
+                <div class="event-featured" id="featuredCard">
+                    <div class="event-featured-img-wrap">
+                        <img id="featuredImg" src="/img/2026.jpeg" alt="Event">
+                        <div class="event-featured-badge" id="featuredBadge">FEATURED</div>
+                        <div class="event-featured-overlay">
+                            <span class="event-featured-num" id="featuredNum">01</span>
+                        </div>
+                    </div>
+                    <div class="event-featured-info">
+                        <div class="event-meta-row">
+                            <span class="event-tag" id="featuredTag">Technical</span>
+                            <span class="event-date" id="featuredDate">2026</span>
+                        </div>
+                        <h3 class="event-featured-title" id="featuredTitle">Digital Treasure Hunt</h3>
+                        <p class="event-featured-desc" id="featuredDesc">
+                            We contributed as event coordinators to Cyber Heist, a technical event organized by the Department of Engineering Sciences and Humanities, supporting the planning and execution of all three rounds. Our responsibilities included framing and curating MCQ questions for Round 1, designing and validating debugging challenges for Round 2, and coordinating the Real Hunt (treasure hunt) in Round 3 by assisting with logistics and execution.
+                        </p>
+                        <div class="event-featured-footer">
+                            <div class="event-stat">
+                                <span class="stat-num" id="featuredStat">3</span>
+                                <span class="stat-label">Rounds</span>
+                            </div>
+                            <div class="event-stat">
+                                <span class="stat-num" id="featuredStat2">50+</span>
+                                <span class="stat-label">Participants</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Thumbnail rail -->
+                <div class="events-rail">
+                    <div class="rail-label">ALL EVENTS</div>
+                    <div class="rail-cards" id="railCards"></div>
+                    <div class="rail-nav">
+                        <button class="rail-btn" id="prevBtn" onclick="prevEvent()">&#8592;</button>
+                        <div class="rail-progress" id="railProgress"></div>
+                        <button class="rail-btn" id="nextBtn" onclick="nextEvent()">&#8594;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats bar -->
+            <div class="events-stats-bar">
+                <div class="es-stat"><span class="es-num">3+</span><span class="es-label">Events Hosted</span></div>
+                <div class="es-divider"></div>
+                <div class="es-stat"><span class="es-num">200+</span><span class="es-label">Participants</span></div>
+                <div class="es-divider"></div>
+                <div class="es-stat"><span class="es-num">3</span><span class="es-label">Years Active</span></div>
+                <div class="es-divider"></div>
+                <div class="es-stat"><span class="es-num">∞</span><span class="es-label">Passion for Math</span></div>
+            </div>
+        </section>
+        <!-- ========== END EVENTS SECTION ========== -->
 
         <section class="members-section" id="members">
             <h2>CLUB MEMBERS</h2>
             <div class="btn-container">
-            <a href="members.html" target="_blank" class="btn">
-                DETAILS
-            </a>
+                <a href="members.html" target="_blank" class="btn">DETAILS</a>
             </div>
-
         </section>
 
         <section class="register-section" id="register">
-    
             <h2>ENTER IN RMC EVENT</h2>
             <div class="btn-container">
-                <a href="ragister.html" target="_blank" class="btn">
-                     REGISTER NOW
-                </a>
+                <a href="ragister.html" target="_blank" class="btn">REGISTER NOW</a>
             </div>
-
         </section>
 
+        <section class="contact-section" id="contact-us">
+            <h2>CONTACT US</h2>
+            <div class="social-box">
+                <a href="tel:+911234567890"><i class='bx bxs-phone'></i> +91 1203597255</a>
+                <a href="mailto:rmcxxx12345@gmail.com"><i class='bx bxl-gmail'></i> rmcshg1230@gmail.com</a>
+                <div class="social-icons">
+                    <a href="" target="_blank"><i class='bx bxl-instagram'></i> rmc</a>
+                    <a href="" target="_blank"><i class='bx bxl-linkedin'></i> rmc</a>
+                </div>
+            </div>
+        </section>
     </div>
 
 
-<script>
-let events = [
-    {
-        img: "/img/2026.jpeg",
-        title: "Treasure Hunt",
-        desc: "We contributed as event coordinators to Cyber Heist, a technical event organized by the Department of Engineering Sciences and Humanities, supporting the planning and execution of all three rounds. Our responsibilities included framing and curating MCQ questions for Round 1, designing and validating debugging challenges for Round 2, and coordinating the Real Hunt (treasure hunt) in Round 3 by assisting with logistics and execution"
-    },
-    {
-        img: "/img/member1.jpg",
-        title: "XYZ Fest",
-        desc: "XYZXYZXYZXYZ"
-    },
-    {
-        img: "/img/2026.jpeg",
-        title: "XYZ",
-        desc: "XYZXYZXYZXYZ"
+
+
+
+
+    <script>
+    /* ===== EVENTS DATA ===== */
+    const events = [
+        {
+            img: "/img/2026.jpeg",
+            title: "Digital Treasure Hunt",
+            tag: "Technical",
+            date: "2026",
+            badge: "COMPLETED",
+            num: "01",
+            stat1: "3", stat1Label: "Rounds",
+            stat2: "100+", stat2Label: "Participants",
+            desc: "We contributed as event coordinators to Cyber Heist, a technical event organized by the Department of Engineering Sciences and Humanities, supporting the planning and execution of all three rounds. Our responsibilities included framing and curating MCQ questions for Round 1, designing and validating debugging challenges for Round 2, and coordinating the Real Hunt (treasure hunt) in Round 3 by assisting with logistics and execution."
+        },
+        {
+            img: "/img/Expert Talk.jpeg",
+            title: "Expert Talk",
+            tag: "Cultural",
+            date: "2025",
+            badge: "PAST",
+            num: "02",
+            stat1: "1", stat1Label: "Teams",
+            stat2: "80+", stat2Label: "Students",
+            desc: "Expert Talk on Application of Statistics and probability in Data science by Dr. P. G. Dixit sir"
+        },
+        {
+            img: "/img/2025.jpeg",
+            title: "Expert Talk",
+            tag: "Cultural",
+            date: "2024",
+            badge: "PAST",
+            num: "03",
+            stat1: "1", stat1Label: "Team",
+            stat2: "60+", stat2Label: "Students",
+            desc: "Expert Session On Vedic Mathematics on occasion of National Mathematics Day Br MRS. Prajakti Gokhle mam  Dirctor Institute of Vedic mathematics UK based NGO."
+        }
+    ];
+
+    let currentIndex = 0;
+
+    /* ===== BUILD RAIL CARDS ===== */
+    function buildRail() {
+        const rail = document.getElementById('railCards');
+        const progress = document.getElementById('railProgress');
+        rail.innerHTML = '';
+        progress.innerHTML = '';
+
+        events.forEach((ev, i) => {
+            const card = document.createElement('div');
+            card.className = 'rail-card' + (i === currentIndex ? ' active' : '');
+            card.innerHTML = `
+                <div class="rail-card-img"><img src="${ev.img}" alt="${ev.title}" onerror="this.src='/img/2026.jpeg'"></div>
+                <div class="rail-card-info">
+                    <span class="rail-card-tag">${ev.tag}</span>
+                    <span class="rail-card-title">${ev.title}</span>
+                    <span class="rail-card-date">${ev.date}</span>
+                </div>
+            `;
+            card.onclick = () => goToEvent(i);
+            rail.appendChild(card);
+
+            const dot = document.createElement('div');
+            dot.className = 'progress-dot' + (i === currentIndex ? ' active' : '');
+            dot.onclick = () => goToEvent(i);
+            progress.appendChild(dot);
+        });
     }
-];
 
-let index = 0;
+    /* ===== UPDATE FEATURED ===== */
+    function updateFeatured(animate = true) {
+        const ev = events[currentIndex];
+        const featured = document.getElementById('featuredCard');
 
-function updateEvent() {
-    document.getElementById("eventImage").src = events[index].img;
-    document.getElementById("eventTitle").innerText = events[index].title;
-    document.getElementById("eventDesc").innerText = events[index].desc;
-}
+        if (animate) {
+            featured.classList.add('transitioning');
+            setTimeout(() => featured.classList.remove('transitioning'), 450);
+        }
 
-function nextEvent() {
-    index = (index + 1) % events.length;
-    updateEvent();
-}
+        document.getElementById('featuredImg').src = ev.img;
+        document.getElementById('featuredImg').onerror = function(){ this.src='/img/2026.jpeg'; };
+        document.getElementById('featuredBadge').textContent = ev.badge;
+        document.getElementById('featuredNum').textContent = ev.num;
+        document.getElementById('featuredTag').textContent = ev.tag;
+        document.getElementById('featuredDate').textContent = ev.date;
+        document.getElementById('featuredTitle').textContent = ev.title;
+        document.getElementById('featuredDesc').textContent = ev.desc;
+        document.getElementById('featuredStat').textContent = ev.stat1;
+        document.getElementById('featuredStat2').textContent = ev.stat2;
 
-function prevEvent() {
-    index = (index - 1 + events.length) % events.length;
-    updateEvent();
-}
-</script>
+        document.querySelectorAll('.rail-card').forEach((c, i) => {
+            c.classList.toggle('active', i === currentIndex);
+        });
+        document.querySelectorAll('.progress-dot').forEach((d, i) => {
+            d.classList.toggle('active', i === currentIndex);
+        });
 
-<script>
-function toggleMenu() {
-    document.getElementById("sideMenu").classList.toggle("active");
-}
-const sections = document.querySelectorAll('.about-section, .events-section');
+        const ticker = document.getElementById('tickerText');
+        ticker.textContent = `NOW VIEWING: ${ev.title.toUpperCase()} — ${ev.tag.toUpperCase()} EVENT — ${ev.date}`;
+    }
 
-window.addEventListener('scroll', () => {
-    sections.forEach(sec => {
-        const rect = sec.getBoundingClientRect();
-        const vh = window.innerHeight;
-        let visible = 1 - Math.abs(rect.top - vh / 2) / vh;
-        visible = Math.min(Math.max(visible, 0), 1);
-        const blur = 6 + visible * 6;
-        sec.style.setProperty('--blur', blur + 'px');
+    function goToEvent(i) {
+        currentIndex = i;
+        updateFeatured(true);
+    }
+
+    function nextEvent() {
+        currentIndex = (currentIndex + 1) % events.length;
+        updateFeatured(true);
+    }
+
+    function prevEvent() {
+        currentIndex = (currentIndex - 1 + events.length) % events.length;
+        updateFeatured(true);
+    }
+
+    /* ===== AUTO PLAY ===== */
+    let autoTimer = setInterval(nextEvent, 5000);
+    document.querySelector('.events-arena').addEventListener('mouseenter', () => clearInterval(autoTimer));
+    document.querySelector('.events-arena').addEventListener('mouseleave', () => {
+        clearInterval(autoTimer);
+        autoTimer = setInterval(nextEvent, 5000);
     });
-});
-</script>       
+
+    /* ===== INIT ===== */
+    buildRail();
+    updateFeatured(false);
+
+    /* ===== KEYBOARD NAV ===== */
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight') nextEvent();
+        if (e.key === 'ArrowLeft') prevEvent();
+    });
+    </script>
+
+    <script>
+    function toggleMenu() {
+        document.getElementById("sideMenu").classList.toggle("active");
+    }
+
+    const sections = document.querySelectorAll('.about-section, .events-section');
+    window.addEventListener('scroll', () => {
+        sections.forEach(sec => {
+            const rect = sec.getBoundingClientRect();
+            const vh = window.innerHeight;
+            let visible = 1 - Math.abs(rect.top - vh / 2) / vh;
+            visible = Math.min(Math.max(visible, 0), 1);
+            const blur = 6 + visible * 6;
+            sec.style.setProperty('--blur', blur + 'px');
+        });
+    });
+    </script>
 
 </body>
 </html>
